@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentoria</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="page">
+    <header>
+      <h1>Mentoria</h1>
+      <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+    </header>
+  
+    <form id="schedule-form">
+      <fieldset>
+        <div class="personal-details">
+          <legend>Informações pessoais</legend>
+          <div class="sep"></div>
+    
+          <section id="full-name">
+            <div class="name">
+              <label for="name">Nome</label>
+              <input id="name" type="text" required>
+            </div>
+      
+            <div class="name">
+              <label for="surname">Sobrenome</label>
+              <input id="surname" type="text" required>
+            </div>
+          </section>
+    
+          <div class="input">
+            <label for="email">Email <span class="span">(digite um email válido)</span class="span"></label>
+            <input id="email" type="email">
+          </div>
+    
+          <div class="input">
+            <label for="password">Senha <span class="span">(mínimo de 6 caracteres)</span class="span"></label>
+            <input id="password" type="password" minlength="6" required>
+          </div>
+        </div>
+      </fieldset>
+      
+      <fieldset>
+        <div class="mentor-details">
+          <legend>Informações do mentor</legend>
+          <div class="sep"></div>
+    
+          <div class="input">
+            <label for="mentor">Nome do seu mentor <span class="span">(só o primeiro nome)</span class="span"></label>
+            <input type="text" id="mentor" required>
+          </div>
+        </div>
+      </fieldset>
+  
+      <fieldset>
+        <div class="schedule">
+          <legend>Seus horários disponíveis</legend>
+          <div class="sep"></div>
+          
+          <legend>Primeira mentoria</legend>
+
+          <div class="date">   
+            <div class="input">
+              <label for="first-date">Data <span class="span">(DD/MM/AAAA)</span class="span"></label>
+              <input type="date" id="first-date" required> 
+            </div>    
+
+            <div class="input">
+              <label for="schedule-start">Das</label>
+              <input type="time" id="schedule-start" required>
+            </div>
+            <div class="input">
+              <label for="schedule-end">Até</label>
+              <input type="time" id="schedule-end" required>
+            </div>
+          </div>
+    
+          <legend>Segunda mentoria</legend>
+
+          <div class="date">
+            <div class="input">
+              <label for="second-date">Data <span class="span">(DD/MM/AAAA)</span class="span"></label>
+              <input type="date" id="second-date" required>
+            </div>
+    
+            <div class="input">
+              <label for="schedule-start-2">Das</label>
+              <input type="time" id="schedule-start" required>
+            </div>
+    
+            <div class="input">
+              <label for="schedule-end-2">Até</label>
+              <input type="time" id="schedule-end" required>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+  
+    </form> 
+  
+    <footer>
+      <input id="button" form="schedule-form" type="submit" value="Salvar">
+    </footer>
+
+  </div>
+</body>
+</html>
