@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+
+}
+
+header {
+  background: #293241;
+  color: #FFFFFF;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1, legend, button {
+  font-family: 'Staatliches', cursive;
+}
+
+header h1 {
+  margin-top: 100px;
+}
+
+header p {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+header img {
+  margin-bottom: 32px;
+}
+
+header legend {
+  background: #F67669;
+  width: 750px;
+  height: 135px;
+
+  padding: 50px;
+  border-radius: 20px 20px 0 0;
+
+  text-align: center;
+  font-size: 24px;
+}
+
+main {
+  background: #BFD7E4;
+  font-size: 14px;
+}
+
+main input {
+  font-size: 16px;
+  padding: 10px;
+}
+
+form {
+  background: #FFFFFF;
+  margin: 0 auto;
+
+  width: 750px;
+}
+
+#content {
+  padding: 30px 64px 64px;
+  color: #4E4958;
+
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+fieldset {
+  border: none;
+}
+
+#personal-info input {
+  width: auto;
+  height: 55px;
+  
+}
+
+.full-name {
+  display: flex;
+  gap: 20px;
+}
+
+.name {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+
+  margin-bottom: 15px;
+}
+
+span {
+  color: #C1BCCC;
+
+
+  margin-left: 5px;
+}
+
+input, select, #feedback {
+  border-radius: 8px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#content legend {
+  color: #253B51;
+  font-size: 24px;
+
+  text-align: center;
+}
+
+.sep {
+  width: 620px;
+  height: 0;
+  border: 1px solid #E6E6F0;
+
+  margin: 10px auto 30px;
+}
+
+#mentor {
+  width: 300px;
+  height: 50px;
+
+  margin-bottom: 30px;
+}
+
+
+
+#feedback {
+  height: 160px;
+  padding: 10px;
+
+  margin-bottom: 30px;
+
+  resize: none;
+}
+
+#all-good {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 36px;
+}
+
+#checkbox {
+  width: 24px;
+  height: 24px;
+}
+
+.date {
+  display: flex;
+  flex-direction: row;
+
+  gap: 32px;
+}
+
+.date div {
+  width: 100%;
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.schedule input {
+  height: 55px;
+}
+
+.form-footer {
+  text-align: center;
+
+  padding: 0 64px 64px;
+}
+
+button {
+  font-size: 20px;
+
+  height: 50px;
+  width: 100%;
+
+  background: #F67669;
+  color: #FFFFFF;
+
+  border: none;
+  border-radius: 8px;
+}
+
+button:hover {
+  background: #f74a37;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
