@@ -8,7 +8,9 @@ alert("Hello World!")
 let number1 = 10
 let number2 = 25
 
-let sum = alert(`A soma das variáveis declaradas no script é: ${number1 + number2}`)
+let sum = number1 + number2
+  
+alert(`A soma das variáveis declaradas no script é: ${sum}`)
 
 
 // E3 & E4 & E5
@@ -44,7 +46,9 @@ if(typeof boolean == "boolean") {
 let firstNumber = 52
 let secondNumber = 45
 
-alert(`O resultado da subtração " ${firstNumber} - ${secondNumber} " é igual a: ${firstNumber - secondNumber}`)
+let sub = firstNumber - secondNumber
+
+alert(`O resultado da subtração " ${firstNumber} - ${secondNumber} " é igual a: ${sub}`)
 
 
 // E7
@@ -52,7 +56,9 @@ alert(`O resultado da subtração " ${firstNumber} - ${secondNumber} " é igual 
 let n1 = 2
 let n2 = 13
 
-alert(`A multiplicação: " ${n1} x ${n2} " resulta em: ${n1 * n2}`)
+let mult = n1 * n2
+
+alert(`A multiplicação: " ${n1} x ${n2} " resulta em: ${mult}`)
 
 
 // E8
@@ -60,7 +66,9 @@ alert(`A multiplicação: " ${n1} x ${n2} " resulta em: ${n1 * n2}`)
 let num1 = 84
 let num2 = 6
 
-alert(`A divisão de ${num1} por ${num2} tem como resultado: ${num1 / num2}`)
+let div = num1 / num2
+
+alert(`A divisão de ${num1} por ${num2} tem como resultado: ${div}`)
 
 
 // E9 & E10
