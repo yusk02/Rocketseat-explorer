@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: clamp(50%, 4% + 2vw, 62.5%);
+  --timer-size: clamp(8rem, 85% + 12vw, 12.6rem);
+  --main-gap: clamp(15rem, 14% + 2vw , 19.2rem);
+  --controls-gap: clamp(2.5rem, 6% + 3vw, 4rem);
+  --controls-size: clamp(3.2rem, 10% + 5vw , 4.8rem);
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+body.blink {
+  filter: invert();
+  background-color: rgba(10, 10, 100, 0.900);
+}
+
+body.blink .themes {
+  filter: invert();
+}
+
+main {
+  display: flex;
+  gap: var(--main-gap);
+  align-items: center;
+}
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  width: 32.6rem;
+}
+
+.timer span {
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--timer-size);
+  color: #323238;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: var(--controls-gap);
+}
+
+.controls button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.controls button, .controls img {
+  width: var(--controls-size);
+}
+
+.themes {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+}
+
+.themes button {
+  width: 13.8rem;
+  height: 15.2rem;
+  border-radius: 2.4rem;
+  border: none;
+  background-color: #E1E1E6;
+  cursor: pointer;
+}
+
+.themes .active {
+  background-color: #02799D;
+}
+
+.active img {
+  filter: invert();
+}
+
+@media (max-width:700px) {
+  main {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .clock {
+    gap: 2rem;
+  }
+
+  .controls {
+    gap: 2rem;
+  }
+
+  .controls button, .controls img {
+    width: 4rem;
+  }
+
+  .themes {
+    gap: 2.4rem;
+  }
+
+  .themes button {
+    width: 10.8rem;
+    height: 12rem;
+  }
+
+  .themes button img {
+    height: 4.2rem;
+  }
+}
