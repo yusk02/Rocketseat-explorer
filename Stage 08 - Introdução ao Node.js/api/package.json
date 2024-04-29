@@ -1,12 +1,11 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "",
+  "description": "API desenvolvida no programa Explorer da Rocketseat",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Raphael Yusuke Nozaki",
   "license": "ISC"
 }
