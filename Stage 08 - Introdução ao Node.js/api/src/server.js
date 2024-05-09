@@ -7,7 +7,7 @@ app.get("/message/:id/:user", (request, response) => {
 
     response.send(`
     Id da mensagem: ${id}. 
-    Para o usuário: ${user}.
+    Nome do usuário: ${user}.
     `)
 })
 
